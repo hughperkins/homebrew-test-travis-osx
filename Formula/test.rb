@@ -1,4 +1,4 @@
-class test < Formula
+class Test < Formula
   desc "test formula"
   homepage "https://github.com/hughperkins/test-travis-osx"
   depends_on "jpeg"
