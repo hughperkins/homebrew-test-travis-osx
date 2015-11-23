@@ -15,9 +15,9 @@ before_install:
   - brew update || brew update
   - mkdir -p $(brew --repo)/Library/Taps/homebrew
   - env | grep TRAVIS_
-  # - ln -s $PWD $(brew --repo)/Library/Taps/homebrew/homebrew-emacs
-  # - cd $(brew --repo)/Library/Taps/homebrew/homebrew-emacs
-  # - export TRAVIS_BUILD_DIR="$(brew --repo)/Library/Taps/homebrew/homebrew-emacs"
+  - ln -s $PWD $(brew --repo)/Library/Taps/homebrew/hugh_test
+  - cd $(brew --repo)/Library/Taps/homebrew/hugh_test
+  - export TRAVIS_BUILD_DIR="$(brew --repo)/Library/Taps/homebrew/hugh_test"
 
 script:
   - echo hello
@@ -26,6 +26,7 @@ script:
   - cmake ..
   - make -j 4
   - ./test
+  - brew test-bot --tap=hugh/test
 
 notifications:
   email:
