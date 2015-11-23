@@ -11,6 +11,7 @@ class Test < Formula
     mkdir "build2" do
       system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
       system "make", "-j", "4"
+      system "make", "install"
     end
   end
 
