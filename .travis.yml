@@ -26,7 +26,8 @@ script:
   - cmake ..
   - make -j 4
   - ./hugh_test
-  - brew test-bot --tap=hughperkins/test-travis-osx
+  - brew install --tap=hughperkins/test-travis-osx
+  # - brew test-bot --tap=hughperkins/test-travis-osx
 
 notifications:
   email:
