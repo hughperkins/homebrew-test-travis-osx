@@ -16,6 +16,6 @@ class Test < Formula
   end
 
   test do
-    system "#{bin}/hugh_test"
+    system "#{bin}/clewTest"
   end
 end
