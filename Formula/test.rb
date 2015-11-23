@@ -9,7 +9,7 @@ class Test < Formula
   def install
     pwd = Pathname.pwd
     mkdir "build2" do
-      system "cmake", "-G", "Unix Makefiles", "..", "std_cmake_args"
+      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
       system "make", "-j", "4"
     end
   end
