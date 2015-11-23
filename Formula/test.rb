@@ -2,6 +2,7 @@ class Test < Formula
   desc "test formula"
   homepage "https://github.com/hughperkins/test-travis-osx"
   url "https://github.com/hughperkins/clew/archive/1d2752564b6af98d24127cdb2d573d3f9ac98f02.tar.gz"
+  sha256 "3793f8ed9ce5b0fcd4bf8581e1bb1fb76f1e24a70fea17044ae86bdb24593b66"
   depends_on "jpeg"
   depends_on "cmake"
 
