@@ -14,6 +14,11 @@ before_install:
 
 script:
   - echo hello
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make -j 4
+  - ./test
 
 notifications:
   email:
