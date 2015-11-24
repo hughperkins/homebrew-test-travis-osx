@@ -38,6 +38,6 @@ class Deepcl < Formula
   end
 
   test do
-    system "#{bin}/deepcl_unittests", "tests=teststringhelper.*"
+    system "#{bin}/deepcl_unittests"
   end
 end
