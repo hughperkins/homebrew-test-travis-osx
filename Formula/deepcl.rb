@@ -12,8 +12,8 @@ class Deepcl < Formula
   end
 
   resource "clBLAS" do
-    url "https://github.com/hughperkins/clBLAS/archive/bdaf1f9ef3d97168fdaff4c3ef588feeae72b171.tar.gz"
-    sha256 "da9995c434c4de205d913a50b58ff7288e391b5dbdb6006951265b838c2cbb13"
+    url "https://github.com/hughperkins/clBLAS/archive/hughperkins_v2.8.1.tar.gz"
+    sha256 "55a8e928de4005679c10c7998e766997db98aac85d55a1aecf78a61887a738ce"
   end
 
   resource "clew" do
