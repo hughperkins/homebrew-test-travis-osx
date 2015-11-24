@@ -1,8 +1,8 @@
 class Clew < Formula
   desc "CLEW"
   homepage "https://github.com/hughperkins/clew"
-  url "https://github.com/hughperkins/clew/archive/1d2752564b6af98d24127cdb2d573d3f9ac98f02.tar.gz"
-  sha256 "3793f8ed9ce5b0fcd4bf8581e1bb1fb76f1e24a70fea17044ae86bdb24593b66"
+  url "https://github.com/hughperkins/clew/archive/hughperkins_v1.0.0.tar.gz"
+  sha256 "e93d0eb1ab6ecdd08b9e79ef5e39b4370518d51ae1d62f4f826b92e5b4909d07"
   depends_on "cmake"
 
   def install
