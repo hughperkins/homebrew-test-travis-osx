@@ -4,7 +4,7 @@ class Deepcl < Formula
   url "https://github.com/hughperkins/DeepCL/archive/v8.1.3.tar.gz"
   sha256 "e0301ba5ae4464ae27a3ec2c777b77faa90b9ee6d1059b200f06a9100d182de1"
 
-  depends_on "jpeg"
+  depends_on "jpeg-turbo"
 
   resource "EasyCL" do
     url "https://github.com/hughperkins/EasyCL/archive/v3.0.0.tar.gz"
