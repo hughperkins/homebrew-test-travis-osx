@@ -28,6 +28,8 @@ script:
   - ./hugh_test
   - brew install --verbose Clew --tap=hughperkins/test-travis-osx
   - brew test --verbose Clew --tap=hughperkins/test-travis-osx
+  - brew install --verbose Easycl --tap=hughperkins/test-travis-osx
+  - brew test --verbose Easycl --tap=hughperkins/test-travis-osx
   # - brew test-bot --tap=hughperkins/test-travis-osx
 
 notifications:
