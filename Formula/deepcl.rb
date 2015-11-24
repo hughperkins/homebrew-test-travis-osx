@@ -7,8 +7,8 @@ class Deepcl < Formula
   depends_on "jpeg"
 
   resource "EasyCL" do
-    url "https://github.com/hughperkins/EasyCL/archive/b9023cdf25c10524ad06227275d3756bbe0c0ed2.tar.gz"
-    sha256 "96c6061385e850081cfce17673353b41dbf470fc6b6f3a15e047b1d6506ba80e"
+    url "https://github.com/hughperkins/EasyCL/archive/v3.0.0.tar.gz"
+    sha256 "e38fa777b4ad22e0e48ba3c5ae55bb1ecb81958806207cdeefa78f9901012e3a"
   end
 
   resource "clBLAS" do
@@ -17,8 +17,8 @@ class Deepcl < Formula
   end
 
   resource "clew" do
-    url "https://github.com/hughperkins/clew/archive/1d2752564b6af98d24127cdb2d573d3f9ac98f02.tar.gz"
-    sha256 "3793f8ed9ce5b0fcd4bf8581e1bb1fb76f1e24a70fea17044ae86bdb24593b66"
+    url "https://github.com/hughperkins/clew/archive/hughperkins_v1.0.0.tar.gz"
+    sha256 "e93d0eb1ab6ecdd08b9e79ef5e39b4370518d51ae1d62f4f826b92e5b4909d07"
   end
 
   depends_on "cmake" => :build
