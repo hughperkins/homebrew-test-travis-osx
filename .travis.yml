@@ -26,6 +26,7 @@ script:
   - cmake ..
   - make -j 4
   - ./hugh_test
+  - brew install --verbose Clblas --tap=hughperkins/test-travis-osx
   - brew install --verbose Clew --tap=hughperkins/test-travis-osx
   - brew test --verbose Clew --tap=hughperkins/test-travis-osx
   - brew install --verbose Easycl --tap=hughperkins/test-travis-osx
