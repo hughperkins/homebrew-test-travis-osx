@@ -2,7 +2,7 @@ class Clblas < Formula
   desc "clBLAS"
   homepage "https://github.com/clMathLibraries/clBLAS"
   url "https://github.com/clMathLibraries/clBLAS/archive/57e1e65c05c9521e02d432d339547bb107c56153.zip"
-  sha256 "https://github.com/clMathLibraries/clBLAS/archive/57e1e65c05c9521e02d432d339547bb107c56153.zip"
+  sha256 "8b3036d2373f745b1338e821cfcf2b28d87c27fcf5a704821d47a65fb457f338"
 
   depends_on "cmake" => :build
 
