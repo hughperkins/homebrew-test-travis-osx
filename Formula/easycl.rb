@@ -21,6 +21,7 @@ class Easycl < Formula
   end
 
   test do
+    system "#{bin}/gpuinfo"
     system "#{bin}/easycl_unittests"
   end
 end
