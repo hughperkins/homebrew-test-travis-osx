@@ -5,8 +5,9 @@ matrix:
       os: osx
       osx_image: osx10.11
       rvm: system
-#cache:
-#  directories:
+cache:
+  directories:
+  - /usr/local
 
 before_install:
   - if [ -f ".git/shallow" ]; then travis_retry git fetch --unshallow; fi
