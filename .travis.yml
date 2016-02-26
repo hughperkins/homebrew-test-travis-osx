@@ -23,6 +23,8 @@ before_install:
   - ln -s $PWD $(brew --repo)/Library/Taps/homebrew/hugh_test
   - cd $(brew --repo)/Library/Taps/homebrew/hugh_test
   - export TRAVIS_BUILD_DIR="$(brew --repo)/Library/Taps/homebrew/hugh_test"
+  - brew install python3
+  - python -V
 
 script:
   - echo hello
@@ -31,13 +33,13 @@ script:
   - cmake ..
   - make -j 4
   - ./hugh_test
-  - brew install --verbose Clew --tap=hughperkins/test-travis-osx
-  - brew test --verbose Clew --tap=hughperkins/test-travis-osx
-  - brew install --verbose Easycl --tap=hughperkins/test-travis-osx
-  - brew test --verbose Easycl --tap=hughperkins/test-travis-osx
-  - brew install --verbose Clblas --tap=hughperkins/test-travis-osx
-  - brew install --verbose Deepcl --tap=hughperkins/test-travis-osx
-  - brew test --verbose Deepcl --tap=hughperkins/test-travis-osx
+#  - brew install --verbose Clew --tap=hughperkins/test-travis-osx
+#  - brew test --verbose Clew --tap=hughperkins/test-travis-osx
+#  - brew install --verbose Easycl --tap=hughperkins/test-travis-osx
+#  - brew test --verbose Easycl --tap=hughperkins/test-travis-osx
+#  - brew install --verbose Clblas --tap=hughperkins/test-travis-osx
+#  - brew install --verbose Deepcl --tap=hughperkins/test-travis-osx
+#  - brew test --verbose Deepcl --tap=hughperkins/test-travis-osx
   # - brew test-bot --tap=hughperkins/test-travis-osx
 
 notifications:
