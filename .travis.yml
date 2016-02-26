@@ -5,10 +5,14 @@ matrix:
       os: osx
       osx_image: osx10.11
       rvm: system
+#cache:
+#  directories:
 
 before_install:
   - if [ -f ".git/shallow" ]; then travis_retry git fetch --unshallow; fi
   - whoami
+  - echo $(brew --repo)
+  - brew --repo
   - pwd
   - env
   - sudo chown -R $USER $(brew --repo)
