@@ -12,6 +12,10 @@ cache:
 before_install:
   - if [ -f ".git/shallow" ]; then travis_retry git fetch --unshallow; fi
   - whoami
+  - wget https://www.python.org/ftp/python/3.4.4/python-3.4.4-macosx10.6.pkg
+  - sudo installer -pkg python-3.4.4-macosx10.6.pkg -target /
+  - python -V
+  - python3 -V
   - echo $(brew --repo)
   - brew --repo
   - pwd
